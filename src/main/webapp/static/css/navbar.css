@@ -1,0 +1,74 @@
+.user {
+    height: 50px;
+    width: 50px;
+    background-color: #1a56e9;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Container của dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Nút chính */
+.dropdown-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Danh sách menu dropdown (ẩn mặc định) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Xuất hiện ngay bên dưới nút */
+    left: 0 ;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    width: fit-content;
+}
+
+/* Các mục trong dropdown */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    left: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Hiển thị dropdown khi hover vào container */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+header {
+    background-color: #fff;
+}
+.relative {
+    position: relative;
+}
+.badge-danger {
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+}

@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+p:last-child {
+    width: fit-content;
+    margin-left: 10px;
+}
+.footer-bottom {
+    max-width: 100%;
+}
+.row {
+    width: 100%;
+}
+.brand-wrap .logo {margin-left: 10px;}

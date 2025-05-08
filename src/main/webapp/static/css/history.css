@@ -1,0 +1,20 @@
+.section-content {
+    height: 100%;
+}
+
+.col-md-12 a {
+    font-size: 24px;
+    margin: 10px;
+
+}
+
+.status {
+    font-size: 12px;
+    background-color: #00b517;
+    color: #fff;
+    padding: 0 10px;
+    width: fit-content;
+    float: right;
+    border-radius: 20px;
+    text-align: center;
+}
