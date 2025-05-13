@@ -11,8 +11,8 @@ public class SendMail {
     // Cấu hình thông tin SMTP
     private final String host = "smtp.gmail.com"; // SMTP server của Gmail
     private final String port = "587"; // Port mặc định của Gmail
-    private final String senderEmail = "22130015@st.hcmuaf.edu.vn"; // Email gửi
-    private final String senderPassword = "sqtw uubu kqtc lcje"; // Mật khẩu ứng dụng (app password)
+    private final String senderEmail = "22130140@st.hcmuaf.edu.vn"; // Email gửi
+    private final String senderPassword = "gein crit fzgu xwug"; // Mật khẩu ứng dụng (app password)
     private  Properties properties ;
     private Message message;
     public SendMail() throws MessagingException {
@@ -38,7 +38,7 @@ public class SendMail {
         message.setFrom(new InternetAddress(senderEmail));
         message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email));
         message.setSubject("Nhấn vào link để kích hoạt tài khoản của bạn : ");
-        message.setText("http://localhost:8080/FashionWebProject/Active?id="+id);
+        message.setText("http://localhost:8080/MyMavenProject/Active?id=" + id);
         return message;
     }
     public Message sendMail (String email, String otp) throws MessagingException {
